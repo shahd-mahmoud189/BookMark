@@ -1,0 +1,144 @@
+body{
+    background-color: #F7ECDE;
+}
+
+h1{
+    font-family: Pacifico, cursive;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 500;
+    position: relative;
+}
+
+h1::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 260px;
+    background-color: rgb(254, 194, 96);
+    height: 30%;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+h1:hover::after{
+    height: 70%;
+}
+
+.inputs-container{
+    border-color: black;
+    border-width: 2px 0;
+    border-style: dotted;
+}
+
+h2{
+    font-family: Righteous, cursive;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    color: transparent;
+    background-image: linear-gradient(to right, #3EA55C, #B3AC4A);
+    background-clip: text;
+}
+
+.btn-submit{
+    background-color: #d1512d;
+    color: white;
+    border-color: #d1512d;
+    width: 150px;
+}
+
+.btn-submit:hover{
+    background-color: #BB4120;
+    color: white;
+}
+
+label{
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.form-control:focus{
+    border-color: #d99c39;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+.btn-visit{
+    background-color: #9eb23b;
+    color: white;
+}
+
+.btn-visit:hover{
+    background-color: #8A9E23;
+    color: white;
+}
+
+.btn-delete{
+    background-color: #eb1d36;
+    color: white;
+}
+
+.btn-delete:hover{
+    background-color: #D30820;
+    color: white;
+}
+
+.btn{
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.valid{
+    border-color: #198754 !important; 
+    box-shadow: 0 0 0 .25rem rgba(25, 135, 84, .25)!important;   
+}
+
+.invalid{
+    border-color: #dc3545 !important;
+    box-shadow: 0 0 0 .25rem rgba(220, 53, 69, .25) !important;
+}
+
+.message{
+    width: 500px;
+}
+
+.message p{
+    font-family: "Bree Serif", serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 27.3px;
+}
+
+.message li{
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 10px;
+}
+
+.message span i{
+    color: #BB4120;
+}
+
+.layer{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.circles :nth-child(1){
+    color: #F15F5D;
+}
+
+.circles :nth-child(2){
+    color: #FEBE2E;
+}
+
+.circles :nth-child(3){
+    color: #4DB748;
+}
