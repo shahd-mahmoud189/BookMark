@@ -6,7 +6,7 @@ var layer = document.querySelector('.layer');
 var closeBtn = document.querySelector('.closeBtn');
 var bookmarkList = [];
 var nameRegex = /^[a-zA-Z0-9'_][a-zA-Z0-9\s]{1,}[a-zA-Z'_0-9]$/;
-var urlRegex = /^(https:\/\/www\.|http:\/\/www\.|https:\/\/|http:\/\/)?[a-zA-Z0-9]{2,}(\.[a-zA-Z0-9]{2,})(\.[a-zA-Z0-9]{2,})?$/;
+var urlRegex = /^(https:\/\/www\.|http:\/\/www\.|https:\/\/|http:\/\/)[a-zA-Z0-9]{2,}(\.[a-zA-Z0-9]{2,})(\.[a-zA-Z0-9]{2,})?$/;
 
 if(localStorage.getItem('bookmarks') != null){
   bookmarkList = JSON.parse(localStorage.getItem('bookmarks'));
