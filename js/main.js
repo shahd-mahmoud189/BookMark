@@ -45,14 +45,14 @@ submitBtn.addEventListener('click',function(){
     addBookmark();
   }
   else{
-    layer.classList.replace('d-none','d-block');
+    layer.classList.replace('d-none','d-flex');
   }
 });
 
 
 closeBtn.addEventListener('click',function(){
 
-  layer.classList.replace('d-block','d-none');
+  layer.classList.replace('d-flex','d-none');
 
 })
 
